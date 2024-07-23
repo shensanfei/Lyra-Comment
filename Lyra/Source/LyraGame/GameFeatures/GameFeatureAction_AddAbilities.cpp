@@ -18,7 +18,7 @@
 
 //////////////////////////////////////////////////////////////////////
 // UGameFeatureAction_AddAbilities
-
+// GameFeature:可插拔的动态运行插件
 void UGameFeatureAction_AddAbilities::OnGameFeatureActivating(FGameFeatureActivatingContext& Context)
 {
 	FPerContextData& ActiveData = ContextData.FindOrAdd(Context);
