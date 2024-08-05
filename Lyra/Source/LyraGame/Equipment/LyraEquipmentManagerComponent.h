@@ -20,6 +20,10 @@ struct FNetDeltaSerializeInfo;
 struct FReplicationFlags;
 
 /** A single piece of applied equipment */
+/****************************
+shenshuoComment
+just for fast serialize?
+****************************/
 USTRUCT(BlueprintType)
 struct FLyraAppliedEquipmentEntry : public FFastArraySerializerItem
 {

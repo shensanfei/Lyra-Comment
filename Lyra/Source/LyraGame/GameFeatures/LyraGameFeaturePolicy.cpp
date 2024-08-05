@@ -5,6 +5,11 @@
 #include "AbilitySystem/LyraGameplayCueManager.h"
 #include "GameFeatureData.h"
 #include "GameplayCueSet.h"
+/****************************
+shenshuoComment
+Policy about which game feature to load
+Analysis their dependencies and preload assets may be
+****************************/
 
 ULyraGameFeaturePolicy::ULyraGameFeaturePolicy(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
@@ -98,7 +103,10 @@ void ULyraGameFeature_AddGameplayCuePaths::OnGameFeatureRegistering(const UGameF
 		if (const UGameFeatureAction_AddGameplayCuePath* AddGameplayCueGFA = Cast<UGameFeatureAction_AddGameplayCuePath>(Action))
 		{
 			const TArray<FDirectoryPath>& DirsToAdd = AddGameplayCueGFA->GetDirectoryPathsToAdd();
-			
+			/****************************
+			shenshuoComment
+			preload GameCue Resoure
+			****************************/
 			if (ULyraGameplayCueManager* GCM = ULyraGameplayCueManager::Get())
 			{
 				UGameplayCueSet* RuntimeGameplayCueSet = GCM->GetRuntimeCueSet();

@@ -87,7 +87,10 @@ void ALyraWeaponSpawner::Tick(float DeltaTime)
 	{
 		CoolDownPercentage = 1.0f - World->GetTimerManager().GetTimerRemaining(CoolDownTimerHandle)/CoolDownTime;
 	}
-
+	/****************************
+	shenshuoComment
+	will it fastter than getting rotation and add the delta?
+	****************************/
 	WeaponMesh->AddRelativeRotation(FRotator(0.0f, World->GetDeltaSeconds() * WeaponMeshRotationSpeed, 0.0f));
 }
 
@@ -109,7 +112,11 @@ void ALyraWeaponSpawner::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent
 		AttemptPickUpWeapon(OverlappingPawn);
 	}
 }
-
+/****************************
+shenshuoComment
+when coolDown time reset, overlapBegin willn't be triggered
+so it will check overlap immidietely
+****************************/
 void ALyraWeaponSpawner::CheckForExistingOverlaps()
 {
 	TArray<AActor*> OverlappingActors;
@@ -182,7 +189,12 @@ void ALyraWeaponSpawner::SetWeaponPickupVisibility(bool bShouldBeVisible)
 {
 	WeaponMesh->SetVisibility(bShouldBeVisible, true);
 }
-
+/****************************
+shenshuoComment
+is it coupling? will Statics hold this ptr?
+what will happen if this released before effect endding?
+use smart pointer may be?
+****************************/
 void ALyraWeaponSpawner::PlayPickupEffects_Implementation()
 {
 	if (WeaponDefinition != nullptr)

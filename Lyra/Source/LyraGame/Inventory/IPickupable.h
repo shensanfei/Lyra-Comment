@@ -17,7 +17,10 @@ class ULyraInventoryItemInstance;
 class ULyraInventoryManagerComponent;
 class UObject;
 struct FFrame;
-
+/****************************
+shenshuoComment
+it's deceptive
+****************************/
 USTRUCT(BlueprintType)
 struct FPickupTemplate
 {

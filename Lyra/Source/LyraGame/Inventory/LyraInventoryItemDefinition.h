@@ -28,6 +28,10 @@ public:
 /**
  * ULyraInventoryItemDefinition
  */
+/****************************
+shenshuoComment
+ECS may be?
+****************************/
 UCLASS(Blueprintable, Const, Abstract)
 class ULyraInventoryItemDefinition : public UObject
 {

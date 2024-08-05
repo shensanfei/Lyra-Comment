@@ -16,6 +16,11 @@ struct FLyraEquipmentActorToSpawn;
  *
  * A piece of equipment spawned and applied to a pawn
  */
+/****************************
+shenshuoComment
+logic weapon,
+spwanEquipActor will be called by LyraEquipmentManagerComponent
+****************************/
 UCLASS(BlueprintType, Blueprintable)
 class ULyraEquipmentInstance : public UObject
 {

@@ -18,7 +18,12 @@ class UStaticMeshComponent;
 struct FFrame;
 struct FGameplayTag;
 struct FHitResult;
+/****************************
+shenshuoComment
+Actor place in the world
+when pawn touch, weapon will be given to the pawn
 
+****************************/
 UCLASS(Blueprintable,BlueprintType)
 class LYRAGAME_API ALyraWeaponSpawner : public AActor
 {

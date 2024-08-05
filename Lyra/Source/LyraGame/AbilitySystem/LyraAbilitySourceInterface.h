@@ -16,7 +16,10 @@ class ULyraAbilitySourceInterface : public UInterface
 {
 	GENERATED_UINTERFACE_BODY()
 };
-
+/****************************
+shenshuoComment
+is Damage/Health dependent distance only?
+****************************/
 class ILyraAbilitySourceInterface
 {
 	GENERATED_IINTERFACE_BODY()

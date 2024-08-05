@@ -43,6 +43,10 @@ public:
 	// Delegate used to query for the best camera mode.
 	FLyraCameraModeDelegate DetermineCameraModeDelegate;
 
+	/****************************
+	shenshuoComment
+	for what?
+	****************************/
 	// Add an offset to the field of view.  The offset is only for one frame, it gets cleared once it is applied.
 	void AddFieldOfViewOffset(float FovOffset) { FieldOfViewOffset += FovOffset; }
 

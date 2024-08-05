@@ -28,7 +28,10 @@ struct FLyraAbilityGrant
 // 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 // 	TSoftObjectPtr<UInputAction> InputAction;
 };
-
+/****************************
+shenshuoComment
+runtime give Actor GAS setting
+****************************/
 USTRUCT(BlueprintType)
 struct FLyraAttributeSetGrant
 {

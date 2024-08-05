@@ -40,7 +40,10 @@ void ULyraPlayerSpawningManagerComponent::InitializeComponent()
 		}
 	}
 }
-
+/****************************
+shenshuoComment
+what's different between world Actor and level Actor?
+****************************/
 void ULyraPlayerSpawningManagerComponent::OnLevelAdded(ULevel* InLevel, UWorld* InWorld)
 {
 	if (InWorld == GetWorld())

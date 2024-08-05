@@ -14,6 +14,10 @@ class UObject;
  *
  * A piece of equipment representing a weapon spawned and applied to a pawn
  */
+/****************************
+shenshuoComment
+so, why comment ULyraWeaponInstance here?
+****************************/
 UCLASS()
 class UPhysicalMaterialWithTags : public UPhysicalMaterial
 {

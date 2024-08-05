@@ -78,7 +78,10 @@ AActor* ULyraCameraMode::GetTargetActor() const
 
 	return LyraCameraComponent->GetTargetActor();
 }
-
+/****************************
+shenshuoComment
+what is pivot
+****************************/
 FVector ULyraCameraMode::GetPivotLocation() const
 {
 	const AActor* TargetActor = GetTargetActor();

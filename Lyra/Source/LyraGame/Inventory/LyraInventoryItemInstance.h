@@ -17,6 +17,10 @@ struct FGameplayTag;
 /**
  * ULyraInventoryItemInstance
  */
+/****************************
+shenshuoComment
+what 'inventory' means in gameplay?
+****************************/
 UCLASS(BlueprintType)
 class ULyraInventoryItemInstance : public UObject
 {
